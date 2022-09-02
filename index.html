@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encriptador de texto - Challenge</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="img/allura-logo.svg" alt="allura-logo">
+        </a>
+    </header>
+    <main class="contenido">
+        <div class="contenido__texto">
+            <input type="text" placeholder="Ingrese texto aqui" class="input__entrada" />
+
+
+            <div class="contenido__texto--actions">
+                <span>
+                    <img src="img/alert-icon.svg" alt="alert">
+                    solo letras minusculas y sin acentos
+                </span>
+                <div class="buttons">
+                    <button type="button" class="btn primary" onclick="btnEncriptar()">Encriptar</button>
+                    <button type="button" class="btn secondary" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <!-- barra lateral -->
+        <div class="contenido__lateral">
+
+            <div id="barra-lateral_imagen">
+                <div class="contenido__lateral--img">
+                    <img src="img/Muñeco.png" alt="muneco">
+                </div>
+                <div>
+                    <h3>Ningun mensaje fue encontrado</h3>
+                    <p>ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+
+            <div id="barra-lateral_msje" class="">
+                <input type="text" class="text-copy"></input>
+                <button type="button" class="btn secondary" onclick="copiarMsje()">Copiar</button>
+            </div>
+
+
+
+        </div>
+        <!-- barra lateral -->
+
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por - Diego Baez &copy; 2022</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
